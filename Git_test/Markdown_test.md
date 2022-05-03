@@ -13,11 +13,11 @@
 3. お肉
    1. OMUSUBI
 
-[Yahoo!](https;//yahoo.co.jp)
+[Yahoo!](https://yahoo.co.jp)
 
 [ヤフー][Yahoo!]
 
-[Yahoo!]:https;//yahoo.co.jp
+[Yahoo!]:https://yahoo.co.jp
 
 改行したい  
 改行は  
