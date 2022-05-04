@@ -1,83 +1,83 @@
-\chapter{�𗬎���������ɂ���}
+\chapter{交流磁化率測定について}
 
-\section{�𗬎���������̊�{����}
+\section{交流磁化率測定の基本原理}
 
 
-�𗬎���������́A�������R�C���̒��ɒu�����̎����ɊO������𗬎���������A
-�������������ꂻ�̃C���_�N�^���X���ω����邱�Ƃ𗘗p���Ă���B
+交流磁化率測定は、試料をコイルの中に置きその試料に外部から交流磁場をかけ、
+試料が磁化されそのインダクタンスが変化することを利用している。
 
-���z�I�ȏꍇ�A�}\ref{fig:acsus}�̂悤�ȑ��u�ő��肪�\�ł���B
-S1 �� S2 �͊��S�ɓ������R�C���ŁA������Ă�����������΂Ȃ��̂ł���Ƃ���B
-���̗��[�Ɍ����d�ʍ��� $V_{coil}$ �Ƃ���B
-S1 �� S2 �Ɉ�l�Ȍ𗬎����������� $V_{coil} = 0$ �ɂȂ�B
+理想的な場合、図\ref{fig:acsus}のような装置で測定が可能である。
+S1 と S2 は完全に等しいコイルで、巻かれている方向が反対なものであるとする。
+この両端に現れる電位差を $V_{coil}$ とする。
+S1 と S2 に一様な交流磁場をかければ $V_{coil} = 0$ になる。
 
-��ʂɊ����� $n$ �A�f�ʐς� $S$ �ł��� $1$ �̃R�C����
-���ԕω����鎥���������ƁA���̗��[�ɂ������d�� $V$ ��
+一般に巻数が $n$ 、断面積が $S$ である $1$ つのコイルに
+時間変化する磁場をかけると、その両端にあらわれる電圧 $V$ は
 \begin{equation}
 V= - n S \frac{dB}{dt}
 \label{Vs}
 \end{equation}
-�ł���B
-���܁A�������x $B$ �͎��� $I$ �ɂ����̂ƁA���E $H$ �ɂ����̘̂a�Ƃ���
+である。
+いま、磁束密度 $B$ は磁化 $I$ によるものと、磁界 $H$ によるものの和として
 \begin{equation}
 B = I + \mu_0 H
 \label{eq:B}
 \end{equation}
-�Ə�����B������ $\mu_0$ �͐^��̓������ł���B
-�����ŁA $I=\mu_0 H'$ �Ȃ� $H'$ �𓱓�����Ǝ� (\ref{eq:B} ) ��
+と書ける。ここで $\mu_0$ は真空の透磁率である。
+ここで、 $I=\mu_0 H'$ なる $H'$ を導入すると式 (\ref{eq:B} ) は
 \begin{equation}
 B=\mu_0(H+H')
 \label{eq:B2}
 \end{equation}
-�ƂȂ�B
-�R�C���̓����Ɏ����������Ă��Ȃ��Ƃ� $H'=0$ �ł��邩��A
-���̎��R�C���̗��[�̓d�ʍ��͎� (\ref{Vs} )���
+となる。
+コイルの内部に試料が入っていないとき $H'=0$ であるから、
+この時コイルの両端の電位差は式 (\ref{Vs} )より
 \begin{equation}
 V_1=-n S \mu_0 \frac{dH}{dt}
 \label{eq:Vs2}
 \end{equation}
-�ƂȂ�B
-����A�R�C�����Ɏ����������Ă���ꍇ�́A
-�ȒP�̂��ߎ����̒f�ʐς� $S$ �Ƃ����
+となる。
+一方、コイル内に試料が入っている場合は、
+簡単のため試料の断面積を $S$ とすると
 \begin{equation}
 V_2=-n S \mu_0 \frac{d(H+H')}{dt}
 \label{eq:Vs1} 
 \end{equation}
-�ƂȂ�B
+となる。
 
-�� (\ref{eq:Vs2} ) �A(\ref{eq:Vs1} ) ���
-$V_{coil}$ ��
+式 (\ref{eq:Vs2} ) 、(\ref{eq:Vs1} ) より
+$V_{coil}$ は
 \begin{equation}
 V_{coil}=- n S \mu_0 \frac{d H'}{dt}
 \label{eq:Vcoil}
 \end{equation}
-�ƂȂ�B
-�����������Ƃ��͖��炩�� $H'=0$ �ł��邩��
-$V_{coil}=0$ �ł���B
+となる。
+試料が無いときは明らかに $H'=0$ であるから
+$V_{coil}=0$ である。
 
-���܊O������Ƃ���
+いま外部磁場として
 \begin{equation}
 H=H_0 \cos \omega t
 \label{eq:H}
 \end{equation}
-���R�C�� S1�AS2 �ɗ^�����Ƃ���B
+をコイル S1、S2 に与えたとする。
 
-�܂������̂̎��� $I$ ���O������ $H$ ��p����
+また磁性体の磁化 $I$ が外部磁場 $H$ を用いて
 \begin{equation}
 I=\chi H
 \label{eq:Jika}
 \end{equation}
-�Ə�����Ƃ���B $I=\mu_0 H'$ ,�� \ref{eq:H} , \ref{eq:Jika}���
+と書けるとする。 $I=\mu_0 H'$ ,式 \ref{eq:H} , \ref{eq:Jika}より
 \begin{equation}
 H'=\frac{\chi H_0}{\mu_0} \cos \omega t
 \label{eq:H'}
 \end{equation}
-�ƂȂ�A�����̎���� $V_{coil}$ ��
+となり、これらの式より $V_{coil}$ は
 \begin{equation}
 V_{coil}=-n S \chi H_0 \omega \sin \omega t
 \label{eq:Vcoil2}
 \end{equation}
-�ƂȂ�A $V_{coil}$ �͎����� $\chi$ �ɔ�Ⴗ�邱�Ƃ��킩��B
+となり、 $V_{coil}$ は磁化率 $\chi$ に比例することがわかる。
 
 
 
@@ -85,78 +85,78 @@ V_{coil}=-n S \chi H_0 \omega \sin \omega t
   \begin{center}
 	\includegraphics[15cm,7.5cm]{acsus.pbm}
   \end{center}
-  \caption{�𗬎��������葕�u�̊�{�}}
+  \caption{交流磁化率測定装置の基本図}
   \label{fig:acsus}
 \end{figure}
 
-�������A���S�ɓ����R�C����2��邱�Ƃ͕s�\�ł��邵
-�쐬�����R�C���ł� S1�AS2 ��
-��l�Ȏ����^���邱�Ƃ͕s�\�ł���B (\ref{subsec:coil} �ߎQ��)
-�܂��A���蒆���x�ω��������Ă������Ƃ��R�C���̌`�̕ω��� S1�AS2 ��
-�����ɂȂ�Ȃ����A�R�C���S�̂̉��x����l�ɂ��邱�Ƃ��قڕs�\�ł���B
+しかし、完全に同じコイルを2つ作ることは不可能であるし
+作成したコイルでは S1、S2 に
+一様な磁場を与えることは不可能である。 (\ref{subsec:coil} 節参照)
+また、測定中温度変化をさせていったときコイルの形の変化が S1、S2 で
+同じにならないし、コイル全体の温度を一様にすることもほぼ不可能である。
 
-�ȏ�̂悤�Ȃ��Ƃ���A�R�C���̒��Ɏ����������Ă��Ȃ��Ƃ��ł�
-���o�d���� $0$ �ɂ͂Ȃ�Ȃ��B
+以上のようなことから、コイルの中に試料が入っていないときでも
+検出電圧は $0$ にはならない。
 
-�����⏞������@�Ƃ��āAHartshorn�^�u���b�W�ƌĂ΂����̂�
-���p����B
-Hartshorn �u���b�W�^�̐}��} \ref{fig:Hartshorn �u���b�W} �Ɏ����B
-����̓R�C��P�ɗ����d���Ɠ����ʑ������s���t�d����
-�ϒ�RR�ŁA $\phi / 2$ �ʑ������ꂽ�s���t�d����
-�σC���_�N�^���X $M_C$ �ŕ⏞����B
+これを補償する方法として、Hartshorn型ブリッジと呼ばれるものを
+利用する。
+Hartshorn ブリッジ型の図を図 \ref{fig:Hartshorn ブリッジ} に示す。
+これはコイルPに流れる電流と同じ位相を持つ不平衡電流を
+可変抵抗Rで、 $\phi / 2$ 位相がずれた不平衡電流を
+可変インダクタンス $M_C$ で補償する。
 
-�������A���ۂ̑��u�ł͕⏞�������ōs�Ȃ����Ƃ͕��G�Ȃ̂ŁA
-�{�����ł�2�ʑ��o�͔��U���p���⏞�͕ʂ̃`�����l���Ŏ蓮�ōs�Ȃ����B
+しかし、実際の装置では補償を自動で行なうことは複雑なので、
+本研究では2位相出力発振器を用い補償は別のチャンネルで手動で行なった。
 
 \begin{figure}[hbtp]
 \begin{center}
 \includegraphics[6.5cm,9.5cm]{bridge.pbm}
 \end{center}
-\caption{Hartshorn�^�u���b�W}
-\label{fig:Hartshorn �u���b�W}
+\caption{Hartshorn型ブリッジ}
+\label{fig:Hartshorn ブリッジ}
 \end{figure}
 
 
-\section{���葕�u�ɂ���}\label{sec:souti}
+\section{測定装置について}\label{sec:souti}
 
-�𗬎��������葕�u�̉�H�}��}\ref{fig:��H} �Ɏ����B
-���̉�H�́AReference�̎����Ƒ���p�R�C��������
-��N�x�ؓc�����삵�����̂����̂܂ܗ��p�����B
-����Ă����ł͖ؓc�̐��삵�����u�����
-�ύX����������������邱�Ƃɂ���B
+交流磁化率測定装置の回路図を図\ref{fig:回路} に示す。
+この回路は、Referenceの取り方と測定用コイルを除き
+昨年度木田が製作したものをそのまま利用した。
+よってここでは木田の製作した装置からの
+変更した部分を説明することにする。
 
 \begin{figure}[p]
 \begin{center}
 \includegraphics[16.5cm,16.5cm]{kairo1.pbm}
 \end{center}
-\caption{�𗬎��������葕�u�̉�H�\��}
-\label{fig:��H}
+\caption{交流磁化率測定装置の回路構成}
+\label{fig:回路}
 \end{figure}
 
-\subsection{�R�C��}\label{subsec:coil}
+\subsection{コイル}\label{subsec:coil}
 
-�} \ref{fig:coil} �ɖ{�����Ŏg�p�����R�C���̐}�������B
-�}�̃{�r���̕����̓|���J�[�{�l�C�g�ō��A���a0.1mm�̓�����
-���o�p�R�C���iS1�AS2)�Ƃ���401�񊪂��A
-���̏�Ɍ𗬎��ꔭ���p�R�C��(P)�Ƃ���
-���������̓�����1006�񊪂����B
+図 \ref{fig:coil} に本研究で使用したコイルの図を示す。
+図のボビンの部分はポリカーボネイトで作り、直径0.1mmの銅線を
+検出用コイル（S1、S2)として401回巻き、
+その上に交流磁場発生用コイル(P)として
+同じ太さの銅線を1006回巻いた。
 
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[10.5cm,7cm]{coil1.pbm}
 \end{center}
-\caption{����p�����R�C��}
+\caption{今回用いたコイル}
 \label{fig:coil}
 \end{figure}
 
-���Ɏ��ꔭ���p�R�C���ɂ��R�C�������̎��ꕪ�z�̗l�q��
-�v�Z���Ă݂�B
+次に磁場発生用コイルによるコイル内部の磁場分布の様子を
+計算してみる。
 
-��ʂɁA�����a $a_1$ �A�O���a $a_2$ �A���� $l$ ��
-�~���\���m�C�h������A���� $N$ ���\���m�C�h�Ɋ��S��
-�ϓ��Ɋ�����Ă���Ƃ��A
-�R�C���ɗ����d���� $I$ �Ƃ���ƁA�Е��̒[���� $x$ 
-�̈ʒu�̎����
+一般に、内半径 $a_1$ 、外半径 $a_2$ 、長さ $l$ の
+円筒ソレノイドがあり、巻数 $N$ がソレノイドに完全に
+均等に巻かれているとき、
+コイルに流れる電流を $I$ とすると、片方の端から $x$ 
+の位置の磁場は
 
 \begin{eqnarray}
 H &=& \frac{NI}{2l(a_2-a_1)}
@@ -168,69 +168,69 @@ H &=& \frac{NI}{2l(a_2-a_1)}
   \right\}
 \label{eq:coiljiba}
 \end{eqnarray}
-�ł���킳���B
-����ɁA$a_1=0.0012$ , $a_2=0.0014$ , $l=0.0018$ , 
-�������Ă݂����̂�}\ref{fig:coilgraph} �Ɏ����B�����̒l��
-�{�����ŗp�����R�C���̃T�C�Y�ł���B
-�Ȃ��A�R�C���ɗ����d���� 2(mA) �Ƃ��Čv�Z���Ă���B
-����́A�����ŗp�������l�ɏ����Ă���B
+であらわされる。
+これに、$a_1=0.0012$ , $a_2=0.0014$ , $l=0.0018$ , 
+を代入してみたものを図\ref{fig:coilgraph} に示す。これらの値は
+本研究で用いたコイルのサイズである。
+なお、コイルに流れる電流を 2(mA) として計算している。
+これは、実験で用いた数値に準じている。
 
 \begin{figure}[htb]
 \begin{center}
 \input{coil1.tex}
 \end{center}
-\caption{�R�C�����̎��ꕪ�z}
+\caption{コイル内の磁場分布}
 \label{fig:coilgraph}
 \end{figure}
 
-�Ȃ��A�R�C���̃��A�N�^���X�͒���g���ő��肷�邱�Ƃ���
-�l�����Ȃ������B
+なお、コイルのリアクタンスは低周波数で測定することから
+考慮しなかった。
 
-\subsection{���b�N�C����A���v�� Reference}\label{subsec:reference}
+\subsection{ロックイン･アンプの Reference}\label{subsec:reference}
 
-��N�x�̓��b�N�C����A���v�� Reference ���R���p���[�^�[��ʂ���
-�ǂ�ł������A�V���Z�T�C�U�[���璼�ړǂݍ��񂾕����m�C�Y��
-���Ȃ��������߁A��҂̕��@��������B
+昨年度はロックイン･アンプの Reference をコンパレーターを通して
+読んでいたが、シンセサイザーから直接読み込んだ方がノイズが
+少なかったため、後者の方法を取った。
 
-\subsection{�N���C�I�X�^�b�g�ւ̃R�C���̎��t��}\label{subsec:cryostat}
+\subsection{クライオスタットへのコイルの取り付け}\label{subsec:cryostat}
 
 
-�N���C�I�X�^�b�g��Iwatani Plantech Corporation �́A
-Cryomini Refrigerator ��p�����B
-���̃R�[���h�w�b�h�ɐ} \ref{fig:sampleholder}
-�̂悤�ȃT���v���z���_�[�����t�����B
-�T���v���z���_�[��2��ލ��A�P�͂��ׂē���(�ȉ��T���v���z���_�[1�Ƃ���)�A
-����1�̓R�[���h�w�b�h�ɐڂ��镔����Al�A�R�C���̒��ɓ���
-�T���v����t���镔�����|���J�[�{�l�C�g�ɂ�������
-(�ȉ��T���v���z���_�[2�Ƃ���)�ł���B
+クライオスタットはIwatani Plantech Corporation の、
+Cryomini Refrigerator を用いた。
+そのコールドヘッドに図 \ref{fig:sampleholder}
+のようなサンプルホルダーを取り付けた。
+サンプルホルダーは2種類作り、１つはすべて銅製(以下サンプルホルダー1とする)、
+もう1つはコールドヘッドに接する部分がAl、コイルの中に入り
+サンプルを付ける部分をポリカーボネイトにしたもの
+(以下サンプルホルダー2とする)である。
 
-�T���v���z���_�[�ƃR�C���̓����ɂ̓l�W���؂��Ă���A
-���t����Ƃ��̓R�C���ɃT���v���z���_�[���˂����ތ`�ɂȂ��Ă���B
-����ɂ��A�T���v���z���_�[�ƃR�C���̓R�[���h�w�b�h��
-��������ƌŒ肳���B
+サンプルホルダーとコイルの内側にはネジが切ってあり、
+取り付けるときはコイルにサンプルホルダーをねじ込む形になっている。
+これにより、サンプルホルダーとコイルはコールドヘッドに
+しっかりと固定される。
 
 \begin{figure}[htb]
 	\begin{center}
 	\includegraphics[14cm,8cm]{smhol.pbm}
 	\end{center}
-	\caption{�T���v���z���_�[}
+	\caption{サンプルホルダー}
 	\label{fig:sampleholder}
 \end{figure}
 
-\subsection{��N�x�̎������@}
+\subsection{昨年度の実験方法}
 
-��N�x�͐}\ref{fig:N2shield}
-�̂悤�ȃA���~�j�E���̃q�[�g�V�[���h��p����
-�������s���Ă����B
-��̓I�ɂ̓q�[�g�V�[���h���ɃR�C�����Œ肵���̃q�[�g�V�[���h����
-�t�̒��f�ɂ����R�ɉ��x���㏸���Ă����ߒ��𑪒肵�Ă����B
-�������r�����̂��ߓ��l�̕��@�Ŏ������s���Ă���B
+昨年度は図\ref{fig:N2shield}
+のようなアルミニウムのヒートシールドを用いて
+実験を行っていた。
+具体的にはヒートシールド内にコイルを固定しこのヒートシールドごと
+液体窒素につけ自然に温度が上昇していく過程を測定していた。
+今回も比較実験のため同様の方法で実験を行っている。
 
 \begin{figure}[htbp]
 	\begin{center}
 	\includegraphics[4.5cm,8cm]{n2shield.pbm}
 	\end{center}
 	
-\caption{�A���~�j�E���̃q�[�g�V�[���h}
+\caption{アルミニウムのヒートシールド}
 \label{fig:N2shield}
 \end{figure}
